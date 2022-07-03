@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'ND Gambit';
+    src: url(NeueDeutsche-ND_Gambit_Regular.otf);
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -14,7 +19,7 @@ html, body {
 
 
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'ND Gambit';
     height: 100%;
 }
 
