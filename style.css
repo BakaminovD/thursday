@@ -356,6 +356,7 @@ body{
     transition-duration: 0.5s;
     font-size: 3vh;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .faq-title::after{
