@@ -64,7 +64,7 @@ body{
     z-index: 0;
     opacity: 0;
     transition-delay: 2s;
-    animation: wow 2s ease-out 1 normal running 1s forwards;
+    animation: wow 0.7s ease-out 1 normal running 1s forwards;
 }
 
 .triangle{
@@ -75,7 +75,7 @@ body{
     z-index: 3;
     opacity: 0;
     transition-delay: 2s;
-    animation: wow 2s ease-out 1 normal running 1s forwards;
+    animation: wow 0.7s ease-out 1 normal running 1s forwards;
 }
 
 .square{
@@ -94,7 +94,7 @@ body{
     flex-direction: column;
     opacity: 0;
     transition-delay: 2s;
-    animation: wow 2s ease-out 1 normal running 1s forwards;
+    animation: wow 0.7s ease-out 1 normal running 1s forwards;
 }
 
 .square .teatre span{
