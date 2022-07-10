@@ -23,6 +23,40 @@ body{
     height: 100%;
 }
 
+/* big photo */
+
+.form{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(115, 112, 112, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    position: fixed;
+    visibility: visible;
+    z-index: 99;
+}
+
+.big_img{
+    width: auto;
+    height: 70vh;
+}
+
+.close_button{
+    font-size: 5vh;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 9vh;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
 /* preloader */
 
 .container-preload{
@@ -210,6 +244,9 @@ body{
     text-align: center;
     margin: 10px;
     font-size: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* content */
@@ -493,6 +530,7 @@ body{
     width: 20vw;
     border-radius: 20px;
     padding: 1vh;
+    cursor: pointer;
 }
 
 .we{
@@ -804,7 +842,9 @@ body{
 
     .block-photo{
         font-size: 1vh;
+        cursor: pointer;
     }
+
     .faq-title{
         margin: 10px auto 2.5px auto;
         font-size: 2vh;
