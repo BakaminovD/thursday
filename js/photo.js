@@ -22,3 +22,30 @@ function getId(event){
 function clouse_photo(){
   document.getElementById('form').style.display = 'none';
 };
+
+function active2018(){
+  let my_2018 = document.getElementById('2018');
+  let my_2019 = document.getElementById('2019');
+  let my_2020 = document.getElementById('2020');
+  my_2018.classList.add('active');
+  my_2019.classList.remove('active');
+  my_2020.classList.remove('active');
+};
+
+function active2019(){
+  let my_2018 = document.getElementById('2018');
+  let my_2019 = document.getElementById('2019');
+  let my_2020 = document.getElementById('2020');
+  my_2018.classList.remove('active');
+  my_2019.classList.add('active');
+  my_2020.classList.remove('active');
+};
+
+function active2020(){
+  let my_2018 = document.getElementById('2018');
+  let my_2019 = document.getElementById('2019');
+  let my_2020 = document.getElementById('2020');
+  my_2018.classList.remove('active');
+  my_2019.classList.remove('active');
+  my_2020.classList.add('active');
+};

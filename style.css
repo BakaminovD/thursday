@@ -48,6 +48,7 @@ body{
     font-size: 5vh;
     border: 2px solid black;
     border-radius: 50%;
+    background-color: #b75cd3;
     width: 9vh;
     height: 9vh;
     display: flex;
@@ -419,11 +420,10 @@ body{
     background-color: white;
 }
 
-.time-block:hover{
+.active{
     opacity: 1;
     text-shadow: 0 0 10px white, 
-                0 0 30px white, 
-                0 0 40px white;
+                0 0 30px white;
 }
 
 .container-perfomanses{
