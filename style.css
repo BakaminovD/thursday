@@ -6,7 +6,11 @@
 
 @font-face {
     font-family: 'ND Gambit';
-    src: url(NeueDeutsche-ND_Gambit_Regular.otf);
+    src: url(fonts/NeueDeutsche-ND_Gambit_Regular.otf);
+}
+@font-face {
+    font-family: 'a_LCDNovaObl';
+    src: url(fonts/a_lcdnovaobl_[allfont.ru].ttf);
 }
 
 html{
@@ -67,6 +71,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     background-color: aliceblue;
     transition: 0.1s all;
@@ -166,6 +171,13 @@ body{
     transform: translateX(1800px);
     animation: left 0.3s linear forwards;
     animation-delay: calc(0.5s*var(--i));
+}
+
+.loader{
+    font-family: 'a_LCDNovaObl';
+    font-weight: 700;
+    font-size: 1.3em;
+    margin-bottom: 1em;
 }
 
 @keyframes wow{
