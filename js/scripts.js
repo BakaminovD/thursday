@@ -40,7 +40,7 @@ function scrollTopTop(){
     })
 };
 
-/* script for photo-popup and close-button */
+/* script for photo-popup, slider and close-button */
 let photos = [
     'person/Aleksandra_Zubets.PNG', 
     'person/Anastasiya_Mishkina.PNG',
@@ -54,34 +54,55 @@ let photos = [
     'person/Veniamin_Bashkov.jpg' 
   ];
 
+let names = [
+    'Александра Зубец', 
+    'Анастасия Мишина',
+    'Дарья Исакова',
+    'Дарья Петрова',
+    'Дмитрий Атлас',
+    'Екатерина Маркова',
+    'Юлия Ефимова',
+    'Олеся Дюкарь', 
+    'Сергей Зареченский', 
+    'Вениамин Башков' 
+  ];
+
 function getId(event){
     let my_img = document.getElementById('big_img');
+    let my_name = document.getElementById("name-big-photo");
     let now_photo = event.target.id;
     document.getElementById('form').style.display = 'flex';
     my_img.outerHTML = '<img src="' + photos[now_photo] + '" alt="" class="big_img" id="big_img" name="'+ now_photo +'">';
+    my_name.outerHTML = '<span class="name-big-photo" id="name-big-photo">'+ names[now_photo] +'</span>';
   };
 
 function left_step(){
     let my_img = document.getElementById("big_img");
+    let my_name = document.getElementById("name-big-photo");
     let now_photo = my_img.name;
     if (now_photo == 0){
         now_photo = 9;
         my_img.outerHTML = '<img src="' + photos[now_photo] + '" alt="" class="big_img" id="big_img" name="'+ now_photo +'">';
+        my_name.outerHTML = '<span class="name-big-photo" id="name-big-photo">'+ names[now_photo] +'</span>';
     } else {
         now_photo = now_photo - 1;
         my_img.outerHTML = '<img src="' + photos[now_photo] + '" alt="" class="big_img" id="big_img" name="'+ now_photo +'">';
+        my_name.outerHTML = '<span class="name-big-photo" id="name-big-photo">'+ names[now_photo] +'</span>';
     };
 };
 
 function right_step(){
     let my_img = document.getElementById("big_img");
+    let my_name = document.getElementById("name-big-photo");
     let now_photo = my_img.name;
     if (now_photo == 9){
         now_photo = 0;
         my_img.outerHTML = '<img src="' + photos[now_photo] + '" alt="" class="big_img" id="big_img" name="'+ now_photo +'">';
+        my_name.outerHTML = '<span class="name-big-photo" id="name-big-photo">'+ names[now_photo] +'</span>';
     } else {
         now_photo++;
         my_img.outerHTML = '<img src="' + photos[now_photo] + '" alt="" class="big_img" id="big_img" name="'+ now_photo +'">';
+        my_name.outerHTML = '<span class="name-big-photo" id="name-big-photo">'+ names[now_photo] +'</span>';
     };
 };
   
