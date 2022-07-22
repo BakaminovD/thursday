@@ -818,6 +818,10 @@ body{
         font-size: 120%;
     }
 
+    .name-big-photo{
+        bottom: 18%;
+    }
+
     .name{
         font-size: 3vh;
     }
