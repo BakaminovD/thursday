@@ -81,7 +81,7 @@ body{
 .name-big-photo{
     position: absolute;
     left: 15px;
-    bottom: 18%;
+    bottom: 15%;
     color: white;
     /*font-size: 50px;*/
     text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
@@ -89,7 +89,7 @@ body{
 
 .big_img{
     width: auto;
-    max-height: 70vh;
+    max-height: 85vh;
 }
 
 .close_button{
@@ -364,7 +364,7 @@ body{
     margin-top: 1vh;
     padding: 1vh 3vh;
     color: white;
-    font-size: 6vh;
+    font-size: 7.5vh;
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
@@ -479,7 +479,7 @@ body{
 .active{
     opacity: 1;
     text-shadow: 0 0 10px white, 
-                0 0 30px white;
+                0 0 20px white;
 }
 
 .container-perfomanses{
@@ -636,10 +636,26 @@ body{
     width: 90%;
     padding: 10px 5px;
     font-weight: 500;
+    font-size: 2.5vh;
     -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
+}
+
+.faq-text p {
+    margin: 1.5vh 0;
+    letter-spacing: 0.05em;
+}
+
+.faq-text p a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #b75cd3;
+}
+
+.faq-text p span{
+    font-weight: 900;
 }
 
 .faq-input:checked ~ .faq-text{
@@ -819,7 +835,7 @@ body{
         border-top-right-radius: 50px;
         margin-top: 0.5vh;
         padding: 0.5vh 1.5vh;
-        font-size: 1.8vh;
+        font-size: 2.4vh;
         font-weight: 700;
     }
 
@@ -915,6 +931,21 @@ body{
     .faq-text{
         font-size: 1.5vh;
         padding: 5px 3px;
+        font-weight: 600;
+    }
+
+    .faq-text p {
+        letter-spacing: 0.01em;
+    }
+
+    .faq-text p a {
+        text-decoration: none;
+        cursor: pointer;
+        color: #b75cd3;
+    }
+
+    .faq-text p span{
+        font-weight: 900;
     }
 
     .big-button,
