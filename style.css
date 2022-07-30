@@ -756,9 +756,42 @@ body{
 
 /* end scroll */
 
-/* for mobile */
+/* for smal screen */
 
-@media (max-width: 700px) {
+@media screen and (max-width: 1250px) {
+    .container-top-left{
+        font-size: 6vh;
+    }
+
+    .black-block{
+        height: 90vh;
+    }
+
+    .about-us{
+        font-size: 2.3vh;
+    }
+
+    .time-block h3{
+        font-size: 180%;
+    }
+
+    .white-line{
+        width: 140%;
+    }
+
+    .container-perfomanses{
+        width: 80%;
+    }
+
+    .container-bottom-left h2{
+        font-size: 4vh;
+        font-weight: 600;
+    }
+}
+
+/* for tablet */
+
+@media screen and (max-width: 700px) {
     .big_img{
         width: 100vw;
     }
@@ -874,7 +907,11 @@ body{
     }
     
     .smile{
-        width: 60vw;
+        max-width: 60vw;
+    }
+
+    .figur{
+        max-width: 50%;
     }
     
     .block-photo{
@@ -954,34 +991,84 @@ body{
     }
 }
 
-/* for tablet */
+/* for mobile */
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 500px) {
+    .big_img{
+        width: 100vw;
+    }
+    
+    .upward {
+        bottom: 700px;
+        right: 20px;
+        width: 35px;
+        height: 35px;
+        border-radius: 35px;
+    }
+    
+    .upward.active {
+        bottom: 20px;
+    }
+    
+    .upward-p {
+        margin: 6px;
+        font-size: 120%;
+    }
+
+    .name-big-photo{
+        bottom: 18%;
+    }
+
+    .name{
+        font-size: 3vh;
+    }
+
+    .button{
+        font-size: 1.5vh;
+    }
+    
     .container-top{
         height: 30vh;
     }
     
     .container-top-left{
         width: 60vw;
-        border-top-right-radius: 120px;
+        border-top-right-radius: 50px;
         margin-top: 0.5vh;
         padding: 0.5vh 1.5vh;
-        font-size: 3vh;
+        font-size: 2.4vh;
         font-weight: 700;
     }
 
     .container-top-left p{
-        letter-spacing: 0.6px;
+        letter-spacing: 0.1px;
+    }
+
+    .line{
+        width: 100%;
+        height: 4vh;
+        font-size: 3vh;
     }
 
     .black-block{
-        height: 64vh;
+        height: 48vh;
         overflow: hidden;
     }
+
+    .ts{
+        font-size: 3vh;
+    }
+
+    .ts::before{
+        content: '';
+        margin: 0 2vh 0.5vh 0;
+    }
+
     .about-us{
-        font-size: 1.8vh;
+        font-size: 1.3vh;
         margin-top: 1vh;
     }
+    
     .time{
         margin-top:2vh;
         width: 100%;
@@ -989,16 +1076,27 @@ body{
     }
 
     .time-block{
-        width: 30vw;
+        width: 32vw;
         margin-left: 0;
     }
     
     .time-block h3{
         font-size: 100%;
     }
+    
+    .white-line{
+        width: 115%;
+    }
+
+    .time-block p{
+        font-size: 1vh;
+        padding: 2px;
+    }
+
     .container-perfomanses{
         width: 80%;
     }
+
     .white-block{
         height: 45vh;
     }
@@ -1011,9 +1109,43 @@ body{
     }
     
     .smile{
-        width: 60vw;
+        width: 90vw;
     }
 
+    .figur{
+        max-width: 70%;
+    }
+    
+    .block-photo{
+        font-size: 1vh;
+        cursor: pointer;
+    }
+
+    .faq-title{
+        margin: 10px auto 2.5px auto;
+        font-size: 2vh;
+        text-transform: uppercase;
+    }
+
+    .faq-text{
+        font-size: 1.5vh;
+        padding: 5px 3px;
+        font-weight: 600;
+    }
+
+    .faq-text p {
+        letter-spacing: 0.01em;
+    }
+
+    .faq-text p a {
+        text-decoration: none;
+        cursor: pointer;
+        color: #b75cd3;
+    }
+
+    .faq-text p span{
+        font-weight: 900;
+    }
 
     .big-button,
     .big-button:active{
@@ -1043,7 +1175,7 @@ body{
     
     .container-bottom-left{
         width: 60vw;
-        border-top-right-radius: 120px;
+        border-top-right-radius: 50px;
         margin-top: 0.5vh;
         padding: 0.5vh 1.5vh;
         font-size: 1vh;
@@ -1057,41 +1189,7 @@ body{
 
     .container-bottom-right{
         background-image: url(image/bottom_mobile.jpg);
-        background-size: auto 140%;
-        border-bottom-right-radius: 120px;
-        min-width: 40vw; 
-        margin-top: 1vh;
-        margin-left: 1vh;
-        padding: 0;
+        border-bottom-right-radius: 50px;
     }
 }
 
-/* for another */
-
-@media (max-width: 1025px) {
-    .black-block{
-        height: 98vh;
-        overflow: hidden;
-    }
-    .about-us{
-        font-size: 2.5vh;
-        margin-top: 1vh;
-    }
-    .time{
-        margin-top:2vh;
-        width: 100%;
-        flex: 1;
-    }
-
-    .time-block{
-        width: 30vw;
-        margin-left: 0;
-    }
-    
-    .time-block h3{
-        font-size: 100%;
-    }
-    .container-perfomanses{
-        width: 80%;
-    }
-}
