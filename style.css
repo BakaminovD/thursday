@@ -30,6 +30,7 @@ html, body {
 
 body{
     font-family: 'Ubuntu';
+    /*font-family: Arial, Helvetica, sans-serif;*/
     height: 100%;
 }
 
@@ -82,6 +83,7 @@ body{
     left: 15px;
     bottom: 15%;
     color: white;
+    /*font-size: 50px;*/
     text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
 }
 
@@ -518,10 +520,45 @@ body{
     z-index: 60;
 }
 
-.figur{
-    max-width: 70%;
-    clip-path: polygon(49% 0, 99% 26%, 100% 100%, 50% 83%, 0 100%, 1% 26%);
-    transform: skewX(-20deg);
+.figur {
+    height: 50vh; 
+    width: 40vw; 
+    margin: 100 auto;
+    position: relative;
+    -moz-transform: rotate(180deg) skew(-15deg, 0deg);
+    -webkit-transform: rotate(180deg) skew(-15deg, 0deg);
+    -o-transform: rotate(180deg) skew(-15deg, 0deg);
+    -ms-transform: rotate(180deg) skew(-15deg, 0deg);
+    transform: rotate(180deg) skew(-15deg, 0deg);
+    position: absolute;
+    opacity: .99;
+}
+    
+.figur:before, 
+.figur:after {
+    content: "";
+    height: 100%; 
+    width: 50%;
+    position: absolute; 
+    top: 0;
+    background: #b75cd3;
+    border: 1px ridge #b75cd3;   
+}
+    
+.figur:before {
+    left: 0;
+    transform: skew(0deg, 15deg);
+    -webkit-transform: skew(0deg, 15deg);
+    -o-transform: skew(0deg, 15deg);
+    -moz-transform: skew(0deg, 15deg);
+}
+    
+.figur:after {
+    right: 0;
+    transform: skew(0deg, -15deg);
+    -webkit-transform: skew(0deg, -15deg);
+    -o-transform: skew(0deg, -15deg);
+    -moz-transform: skew(0deg, -15deg);
 }
 
 /* photo */
@@ -590,6 +627,7 @@ body{
     content: '\21D2';
     position: absolute;
     right: 7%;
+    /*margin-right: 50px;*/
 }
 
 .faq-text{
@@ -699,7 +737,7 @@ body{
 
 .container-bottom-right{
     background-image: url(image/bottom.jpg);
-    background-size: auto 140%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     border-bottom-right-radius: 200px;
@@ -761,6 +799,7 @@ body{
 @media (max-width: 700px) {
     .big_img{
         width: 100vw;
+        /*max-height: 70vh;*/
     }
     
     .upward {
@@ -871,12 +910,18 @@ body{
         position: absolute;
         top: 50px;
         left: 0.8vh;
+        /*top: 8vw;
+        left: 8vh;*/
     }
     
     .smile{
         width: 60vw;
     }
     
+    .figur {
+        height: 12vh;
+    }
+
     .block-photo{
         font-size: 1vh;
         cursor: pointer;
@@ -954,144 +999,3 @@ body{
     }
 }
 
-/* for tablet */
-
-@media (max-width: 1000px) {
-    .container-top{
-        height: 30vh;
-    }
-    
-    .container-top-left{
-        width: 60vw;
-        border-top-right-radius: 120px;
-        margin-top: 0.5vh;
-        padding: 0.5vh 1.5vh;
-        font-size: 3vh;
-        font-weight: 700;
-    }
-
-    .container-top-left p{
-        letter-spacing: 0.6px;
-    }
-
-    .black-block{
-        height: 64vh;
-        overflow: hidden;
-    }
-    .about-us{
-        font-size: 1.8vh;
-        margin-top: 1vh;
-    }
-    .time{
-        margin-top:2vh;
-        width: 100%;
-        flex: 1;
-    }
-
-    .time-block{
-        width: 30vw;
-        margin-left: 0;
-    }
-    
-    .time-block h3{
-        font-size: 100%;
-    }
-    .container-perfomanses{
-        width: 80%;
-    }
-    .white-block{
-        height: 45vh;
-    }
-    
-    .white-block p{
-        font-size: 2.2vh;
-        position: absolute;
-        top: 50px;
-        left: 0.8vh;
-    }
-    
-    .smile{
-        width: 60vw;
-    }
-
-
-    .big-button,
-    .big-button:active{
-        width: 80%;
-        height: 6vh;
-        border-radius: 8vh;
-        font-size: 1.5vh;
-    }
-
-    .container-bottom{
-        height: 25vh;
-    }
-
-    .container-bottom-left h2{
-        font-size: 2.45vh;
-        font-weight: 600;
-    }
-
-    .container-bottom-left .tel{
-        margin-left: 7px;
-    }
-
-    .container-bottom-left p{
-        margin-left: 7px;
-        letter-spacing: 2px;
-    }
-    
-    .container-bottom-left{
-        width: 60vw;
-        border-top-right-radius: 120px;
-        margin-top: 0.5vh;
-        padding: 0.5vh 1.5vh;
-        font-size: 1vh;
-    }
-
-    .target,
-    .target:active{
-        font-size: 1.5vh;
-        letter-spacing: 3px;
-    }
-
-    .container-bottom-right{
-        background-image: url(image/bottom_mobile.jpg);
-        background-size: auto 140%;
-        border-bottom-right-radius: 120px;
-        min-width: 40vw; 
-        margin-top: 1vh;
-        margin-left: 1vh;
-        padding: 0;
-    }
-}
-
-/* for another */
-
-@media (max-width: 1025px) {
-    .black-block{
-        height: 98vh;
-        overflow: hidden;
-    }
-    .about-us{
-        font-size: 2.5vh;
-        margin-top: 1vh;
-    }
-    .time{
-        margin-top:2vh;
-        width: 100%;
-        flex: 1;
-    }
-
-    .time-block{
-        width: 30vw;
-        margin-left: 0;
-    }
-    
-    .time-block h3{
-        font-size: 100%;
-    }
-    .container-perfomanses{
-        width: 80%;
-    }
-}
