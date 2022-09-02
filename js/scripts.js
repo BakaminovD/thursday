@@ -112,7 +112,7 @@ function clouse_photo(){
     document.getElementById('form').style.display = 'none';
   };
 
-  /* script for switching opacity */
+  /* script for switching opacity 
 
   function active2018(){
     let my_2018 = document.getElementById('2018');
@@ -139,4 +139,4 @@ function clouse_photo(){
     my_2018.classList.remove('active');
     my_2019.classList.remove('active');
     my_2020.classList.add('active');
-  };
+  }; */

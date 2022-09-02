@@ -451,7 +451,45 @@ body{
     margin-top:5vh;
 }
 
-.time-block{
+.time-block-year{
+    display: block;
+    width: 30%;
+}
+
+.check{
+    width: 0;
+    height: 0;
+}
+
+.year{
+    font-family: 'ND Gambit';
+    cursor: pointer;
+    font-size: 10vmin;
+    margin: 0 10px;
+    opacity: 0.3;
+    transform: all .5s;
+}
+
+.inform{
+    font-size: 2.5vmin;
+    border-top: 5px solid white;
+    opacity: 0.3;
+    transform: all .5s;
+}
+
+.inform p{
+    margin: 0 10px;
+}
+
+.check:checked ~ .year{
+    opacity: 1;
+}
+
+.check:checked ~ .inform{
+    opacity: 1;
+}
+
+/*.time-block{
     width: 25vw;
     opacity: .3;
     cursor: pointer;
@@ -478,7 +516,7 @@ body{
     opacity: 1;
     text-shadow: 0 0 10px white, 
                 0 0 20px white;
-}
+} */
 
 .container-perfomanses{
     width: 100%;
@@ -771,13 +809,22 @@ body{
         font-size: 2.3vh;
     }
 
-    .time-block h3{
+    .year{
+        font-size: 5vmin;
+    }
+
+    .inform{
+        font-size: 1.2vmin;
+        border-top: 2px solid white;
+    }
+
+    /*.time-block h3{
         font-size: 180%;
     }
 
     .white-line{
         width: 140%;
-    }
+    } */
 
     .container-perfomanses{
         width: 80%;
@@ -873,7 +920,16 @@ body{
         flex: 1;
     }
 
-    .time-block{
+    .year{
+        font-size: 4vmin;
+    }
+
+    .inform{
+        font-size: 1.5vmin;
+        border-top: 1px solid white;
+    }
+
+   /* .time-block{
         width: 32vw;
         margin-left: 0;
     }
@@ -889,7 +945,7 @@ body{
     .time-block p{
         font-size: 1vh;
         padding: 2px;
-    }
+    } */
 
     .container-perfomanses{
         width: 80%;
@@ -1075,7 +1131,16 @@ body{
         flex: 1;
     }
 
-    .time-block{
+    .year{
+        font-size: 4vmin;
+    }
+
+    .inform{
+        font-size: 1.5vmin;
+        border-top: 1px solid white;
+    }
+
+    /* .time-block{
         width: 32vw;
         margin-left: 0;
     }
@@ -1091,7 +1156,7 @@ body{
     .time-block p{
         font-size: 1vh;
         padding: 2px;
-    }
+    } */
 
     .container-perfomanses{
         width: 80%;
