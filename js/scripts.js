@@ -50,6 +50,7 @@ let photos = [
     'person/Ekaterina_Markova.PNG',
     'person/Iulia_efimova.PNG',
     'person/Olesia_Dukar.PNG', 
+    'person/Daler_Gazibekov.PNG',
     'person/Sergey_Zarechenskii.PNG', 
     'person/Veniamin_Bashkov.jpg' 
   ];
@@ -63,6 +64,7 @@ let names = [
     'Екатерина Маркова',
     'Юлия Ефимова',
     'Олеся Дюкарь', 
+    'Далер Газибеков',
     'Сергей Зареченский', 
     'Вениамин Башков' 
   ];
@@ -81,7 +83,7 @@ function left_step(){
     let my_name = document.getElementById("name-big-photo");
     let now_photo = my_img.name;
     if (now_photo == 0){
-        now_photo = 9;
+        now_photo = 10;
         my_img.outerHTML = '<img src="' + photos[now_photo] + '" alt="" class="big_img" id="big_img" name="'+ now_photo +'">';
         my_name.outerHTML = '<span class="name-big-photo" id="name-big-photo">'+ names[now_photo] +'</span>';
     } else {
@@ -95,7 +97,7 @@ function right_step(){
     let my_img = document.getElementById("big_img");
     let my_name = document.getElementById("name-big-photo");
     let now_photo = my_img.name;
-    if (now_photo == 9){
+    if (now_photo == 10){
         now_photo = 0;
         my_img.outerHTML = '<img src="' + photos[now_photo] + '" alt="" class="big_img" id="big_img" name="'+ now_photo +'">';
         my_name.outerHTML = '<span class="name-big-photo" id="name-big-photo">'+ names[now_photo] +'</span>';
