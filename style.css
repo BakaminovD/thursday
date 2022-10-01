@@ -414,6 +414,12 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+}
+
+.black_fon{
+    position: absolute;
+    width: 50%;
 }
 
 .ts{
@@ -449,6 +455,7 @@ body{
     display: flex;
     justify-content: flex-end;
     margin-top:5vh;
+    z-index: 2;
 }
 
 .time-block-year{
@@ -549,7 +556,7 @@ body{
 }
 
 .smile{
-    width: 40vw;
+    width: 50vw;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -737,7 +744,7 @@ body{
 
 .container-bottom-right{
     background-image: url(image/bottom.jpg);
-    background-size: auto 140%;
+    background-size: auto 120%;
     background-repeat: no-repeat;
     background-position: center center;
     border-bottom-right-radius: 200px;
@@ -803,6 +810,10 @@ body{
 
     .black-block{
         height: 90vh;
+    }
+
+    .black_fon{
+        top: 10%;
     }
 
     .about-us{
@@ -898,6 +909,10 @@ body{
     .black-block{
         height: 48vh;
         overflow: hidden;
+    }
+
+    .black_fon{
+        top: 10%;
     }
 
     .ts{
@@ -1107,8 +1122,12 @@ body{
     }
 
     .black-block{
-        height: 48vh;
+        height: 45vh;
         overflow: hidden;
+    }
+
+    .black_fon{
+        top: 10%;
     }
 
     .ts{

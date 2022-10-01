@@ -47,12 +47,11 @@ let photos = [
     'person/Daria_Isakova.PNG',
     'person/Daria_Petrova.PNG',
     'person/Dmitrii_Atlas.PNG',
-    'person/Ekaterina_Markova.PNG',
+    'person/Veniamin_Bashkov.jpg',
     'person/Iulia_efimova.PNG',
     'person/Olesia_Dukar.PNG', 
     'person/Daler_Gazibekov.PNG',
-    'person/Sergey_Zarechenskii.PNG', 
-    'person/Veniamin_Bashkov.jpg' 
+    'person/Sergey_Zarechenskii.PNG',  
   ];
 
 let names = [
@@ -61,12 +60,11 @@ let names = [
     'Дарья Исакова',
     'Дарья Петрова',
     'Дмитрий Атлас',
-    'Екатерина Маркова',
+    'Вениамин Башков',
     'Юлия Ефимова',
     'Олеся Дюкарь', 
     'Далер Газибеков',
     'Сергей Зареченский', 
-    'Вениамин Башков' 
   ];
 
 function getId(event){
@@ -83,7 +81,7 @@ function left_step(){
     let my_name = document.getElementById("name-big-photo");
     let now_photo = my_img.name;
     if (now_photo == 0){
-        now_photo = 10;
+        now_photo = 9;
         my_img.outerHTML = '<img src="' + photos[now_photo] + '" alt="" class="big_img" id="big_img" name="'+ now_photo +'">';
         my_name.outerHTML = '<span class="name-big-photo" id="name-big-photo">'+ names[now_photo] +'</span>';
     } else {
@@ -97,7 +95,7 @@ function right_step(){
     let my_img = document.getElementById("big_img");
     let my_name = document.getElementById("name-big-photo");
     let now_photo = my_img.name;
-    if (now_photo == 10){
+    if (now_photo == 9){
         now_photo = 0;
         my_img.outerHTML = '<img src="' + photos[now_photo] + '" alt="" class="big_img" id="big_img" name="'+ now_photo +'">';
         my_name.outerHTML = '<span class="name-big-photo" id="name-big-photo">'+ names[now_photo] +'</span>';
