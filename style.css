@@ -1266,7 +1266,7 @@ body{
     .container-bottom-right{
         background-image: url(image/bottom_mobile.jpeg);
         border-bottom-right-radius: 50px;
-        background-size: auto 60%;
+        background-size: auto 70%;
         background-color: black;
         margin-left: 1vh;
     }
