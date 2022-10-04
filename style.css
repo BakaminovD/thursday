@@ -507,20 +507,20 @@ body{
 }
 
 .perf{
-    width: 24vmin;
-    height: 5vmin;
+    width: 37vmin; /*24*/
+    height: 8vmin; /*5*/
     border-radius: 30px;
     display: flex;
     padding: 0 0.2%;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: calc( (100vw - 480px)/(1280 - 480) * (14 - 5) + 5px);
+    font-size: calc( (100vw - 480px)/(1280 - 480) * (14 - 8) + 8px);
     transition: all 0.5s;
 }
 
 .perf:hover{
-    box-shadow: 0 0 50px white;
+    box-shadow: 0 0 30px white;
 }
 
 .perf_a:active,
@@ -557,7 +557,7 @@ body{
 .vedma{
     border: 1px solid white;
     transform-origin: right;
-    transform: translate(-75%, -220%) rotate(-10deg); /*-195*/
+    transform: translate(-75%, -215%) rotate(-10deg); /*-195*/
 }
 
 .ded{
@@ -898,7 +898,7 @@ body{
 
 /* for tablet */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 820px) { /*700*/
     .big_img{
         width: 100vw;
     }
@@ -995,6 +995,11 @@ body{
 
     .container-perfomanses{
         width: 80%;
+    }
+
+    .perf{
+        width: 22vmin; 
+        height: 5vmin; 
     }
 
     .white-block{
@@ -1198,6 +1203,11 @@ body{
 
     .container-perfomanses{
         width: 80%;
+    }
+
+    .perf{
+        width: 22vmin; 
+        height: 5vmin; 
     }
 
     .white-block{
