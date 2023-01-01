@@ -455,6 +455,7 @@ body{
     display: flex;
     justify-content: flex-end;
     margin-top:5vh;
+    margin-bottom: 2vh;
     z-index: 2;
 }
 
@@ -501,7 +502,7 @@ body{
     height: 30%;
     background-color: black;
     color: white;
-    display: none; /* flex */
+    display: flex; /* none */
     align-items: flex-end;
     justify-content: center;
 }
@@ -857,7 +858,7 @@ body{
     }
 
     .black-block{
-        height: 90vh;
+        height: 100vh;
     }
 
     .black_fon{
