@@ -642,6 +642,12 @@ body{
     border-radius: 20px;
     padding: 1vh;
     cursor: pointer;
+    filter: grayscale(100%);
+    transition: .5s;
+}
+
+.block-photo img:hover{
+    filter: grayscale(0%);
 }
 
 .we{
